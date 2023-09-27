@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>HotA template list</title>
+		<link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+		<link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <div class="retturnbutton">
+            <a href="../index.html">&lt;&lt;`<img class="icon" src="../img/home_icon.png">home</a>
+        </div>
+
+        <h1>Heroes of Might and Magic III: Horn of the Abyss mt_Andromeda modifications list</h1>
+
+        <p class="disclaim">Templates listed here belong to their authors, not owner of this repository.</p>
+        
+        <p class="templname">mt_Andromeda 2.1</p>        
+        <p class="templshortdescr">Version author: Wnukos 
+            <br> Upgrade of build-in mt_Andromeda. It's version with ai's.
+            <br> <a href="https://drive.google.com/file/d/1__G_yHpYboAJvViRsdlREEuK7gLudGFk/view?usp=sharing">Link to download</a>
+            <br> <div class="templdescrcont" onclick="toggleVisibility(this)">
+                Click for full description <br/>
+                <iframe class="templdescr" src="mt_andro2.1.html"></iframe>
+            </div>
+        </p>
+        <p class="templname">mt_Andromeda 2.2</p>        
+        <p class="templshortdescr">Version author: Wnukos 
+            <br> Upgrade of build-in mt_Andromeda. It's version without ai's.
+            <br> <a href="https://drive.google.com/file/d/1E717NYJOGmgu6nw_D81tA5IgOX0MOmm9/view">Link to download</a>
+            <br> <div class="templdescrcont" onclick="toggleVisibility(this)">
+                Click for full description <br/>
+                <iframe class="templdescr" src="mt_andro2.2.html"></iframe>
+            </div>
+        </p>
+        <p class="templname">mt_Nebula 1.1</p>        
+        <p class="templshortdescr">Version author: Wnukos
+            <br> Evolution of mt_Andromeda template. It can be played with or without ai's.
+            <br> <a href="https://drive.google.com/file/d/1b-6Yws_PZ-fxR9Uhr9JWX7bpWhmP1Ent/view?usp=drive_link">Link to download</a>
+            <br> <div class="templdescrcont" onclick="toggleVisibility(this)">
+                Click for full description <br/>
+                <iframe class="templdescr" src="mt_nebula.html"></iframe>
+            </div>
+        </p>
+<!-- Yes, I know I could write external JS script instead of adding it to every subpage, but I always copy whole subpage, so there is no diffrence -->
+        <script>
+            function toggleVisibility(container) {
+            var templdescr = container.querySelector(".templdescr");
+            var isVisible = templdescr.classList.contains("templdescr-visible");
+
+            if (isVisible) {
+                templdescr.classList.remove("templdescr-visible");
+            } else {
+                templdescr.classList.add("templdescr-visible");
+            }
+            }
+        </script>
+    </body>
+</html>
