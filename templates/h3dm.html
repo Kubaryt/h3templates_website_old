@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>HotA template list</title>
+		<link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+		<link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <div class="retturnbutton">
+            <a href="../index.html">&lt;&lt;`<img class="icon" src="../img/home_icon.png">home</a>
+        </div>
+
+        <h1>Heroes of Might and Magic III: Horn of the Abyss h3dm1 modifications list</h1>
+
+        <p class="disclaim">Templates listed here belong to their authors, not owner of this repository.</p>
+<!-- I was wondering if I should also add old h3dm1 or h3dm2.1(.1), but I don't think that's needed -->
+        <p class="templname">h3dm3</p>        
+        <p class="templshortdescr">Version author: Xocenk
+            <br> Template created after success of h3dm3.1/3.2 on True Mirror 2 tournament. It's main version played in majority of tournaments.
+            <br> <a href="https://cdn.discordapp.com/attachments/793107673917816883/1044725627909054544/h3dm3.rar">Link to download</a>
+            <br> <div class="templdescrcont" onclick="toggleVisibility(this)">
+                Click for full description <br/>
+                <iframe class="templdescr" src="h3dm3.html"></iframe>
+            </div>
+        </p>
+        <p class="templname">h3dm3.1</h3dm3></p>        
+        <p class="templshortdescr">Version author: Xocenk
+            <br> Template created for True Mirror 2 tournament.
+            <br> <a href="https://drive.google.com/file/d/1IkhDhFtrShdwK3sp19wc625MYrpriVHB/edit">Link to download</a>
+            <br> <div class="templdescrcont" onclick="toggleVisibility(this)">
+                Click for full description <br/>
+                <iframe class="templdescr" src="h3dm3.1.html"></iframe>
+            </div>
+        </p>
+        <p class="templname">h3dm3.2</p>        
+        <p class="templshortdescr">Version author: Xocenk
+            <br> Template created for True Mirror 2 tournament.
+            <br> <a href="https://drive.google.com/file/d/1DjOYBjILKlu0Ugio8BfbuRodx5HMYP4c/edit">Link to download</a>
+            <br> <div class="templdescrcont" onclick="toggleVisibility(this)">
+                Click for full description <br/>
+                <iframe class="templdescr" src="h3dm3.2.html"></iframe>
+            </div>
+        </p>
+<!-- Yes, I know I could write external JS script instead of adding it to every subpage, but I always copy whole subpage, so there is no diffrence -->
+        <script>
+            function toggleVisibility(container) {
+            var templdescr = container.querySelector(".templdescr");
+            var isVisible = templdescr.classList.contains("templdescr-visible");
+
+            if (isVisible) {
+                templdescr.classList.remove("templdescr-visible");
+            } else {
+                templdescr.classList.add("templdescr-visible");
+            }
+            }
+        </script>
+    </body>
+</html>
