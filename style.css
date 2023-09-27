@@ -64,6 +64,15 @@ h2 {
     font-family: droidsansmono;
 }
 
+.templshortdescr:visited{
+    font-size: 1em;
+    margin: 0em;
+    margin-left: 2.5em;
+    margin-bottom: 0.5em;
+    font-family: droidsansmono;
+    color: aqua;    
+}
+
 .templdescr{
     height: 0em;
     width: 50em;
@@ -111,7 +120,7 @@ h2 {
 }
 
 .returnbutton:visited{
-    color: purple;
+    color: aqua;
     background-color: transparent;
     text-decoration: underline;
 }
