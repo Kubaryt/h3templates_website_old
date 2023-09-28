@@ -12,7 +12,7 @@ body {
     background-color: #f8f4e3;
     border: solid;
     border-color: #a2a392;
-    border-width: 1em;
+    border-width: 1vw;
     border-top-width: 0em;
     display: flex;
     height: auto;
@@ -21,111 +21,115 @@ body {
 }
 
 h1 {
-    text-align: center ;
+    text-align: center;
     color: darkblue;
-    font-size: 2em;
+    flex: 1;
     font-family: metamorphous;
-    line-height: 1.5em;
     border-bottom: solid;
     border-color: #606153;
-    border-bottom-width: 0.7em;
+    border-bottom-width: 0.7vw;
+    line-height:250%;
+    font-size: 250%;
+    margin-top: 0;
+    margin-bottom: 1vw;
 }
 
 .disclaim {
     text-align: center;
     color: rgb(112, 112, 112);
-    font-size: 0.9em;
-    margin: 1em;
+    flex: 0.3;
     font-style: italic;
+    margin-bottom: 0.7vw;
+}
+
+.filler {
+    flex: 0.6;
 }
 
 h2 {
-    font-size: 2em;
-    margin: 0em;
-    margin-left: 0.5em;
+    flex:0.9;
+    font-size: 200%;
+    margin: 0;
+    margin-left: 0.5vw;
+    margin-bottom: 1.3vw;
     font-family: metamorphous;
-    line-height: 1em;
-    
+}
+
+p {
+    margin: 0;
 }
 
 .templname {
-    font-size: 1.5em;
-    margin: 0.5em;
-    margin-left: 1.5em;
-    font-style: bold;
+    font-weight: bold;
+    font-size: 150%;
+    flex: 0.7;
+    margin-left: 1.5vw;
+    margin-bottom: 0.5vw;
     font-family: droidsansmono;
 }
 
 .templshortdescr{
-    font-size: 1em;
-    margin: 0em;
-    margin-left: 2.5em;
-    margin-bottom: 0.5em;
+    flex: 0.6;
+    margin: 0;
+    margin-left: 2.5vw;
+    margin-bottom: 0.5vw;
     font-family: droidsansmono;
 }
 
-.templshortdescr:visited{
-    font-size: 1em;
-    margin: 0em;
-    margin-left: 2.5em;
-    margin-bottom: 0.5em;
-    font-family: droidsansmono;
-    color: aqua;    
+a{
+    font-size: 1vw;
+}
+
+a:visited{
+    color: blue;    
 }
 
 .templdescr{
-    height: 0em;
-    width: 50em;
+    flex: 0;
     position:absolute;
     top: 100%;
-    margin-left: 2.5em;
+    margin-left: 2.5vw;
     opacity: 0;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.5vw;
     visibility: hidden;
 }
 
+.ul{
+    font-size: 150%;
+    font-family: droidsansmono;
+}
+
 .templdescr-visible{
-    height: 25em;
-    width: 50em;
+    width: 90vw;
+    height: 50vh;
     position:static;
     top: 100%;
-    margin-left: 2.5em;
+    margin-left: 2.5vw;
     opacity: 1;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.5vw;
     visibility: visible;
 }
 
 .templdescrcont{
+    flex: 0.6;
     position: relative;
     display: inline-block;
     cursor: pointer;
-    margin-bottom: 0.5em;
-    margin-left: 2.5em;
+    margin-bottom: 0.5vw;
+    margin-left: 2.5vw;
 }
 
 .templgraph{
-    height: 25em;
+    height: 50%;
     width: auto;
 }
 
 .returnbutton{
-    font-size: 1em;
+    flex: 0.3;
     font-family: droidsansmono;
 }
 
-.returnbutton:link{
-    color: aqua;
-    background-color: transparent;
-    text-decoration: underline;
-}
-
-.returnbutton:visited{
-    color: aqua;
-    background-color: transparent;
-    text-decoration: underline;
-}
-
 .icon {
-    height: 1.5em;
+    height: 1.5vw;
     width: auto;
 }
