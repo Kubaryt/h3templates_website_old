@@ -94,6 +94,14 @@ a:visited{
     visibility: hidden;
 }
 
+.templsetlink{
+    flex: 0.6;
+    margin: 0;
+    font-size: 100%;
+    margin-bottom: 0.5vw;
+    font-family: droidsansmono;
+}
+
 .ul{
     font-size: 150%;
     font-family: droidsansmono;
