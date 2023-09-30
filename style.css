@@ -76,6 +76,10 @@ p {
     font-family: droidsansmono;
 }
 
+a {
+    font-size: 100%;
+}
+
 a:visited{
     color: blue;    
 }
