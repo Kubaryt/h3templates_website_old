@@ -11,7 +11,19 @@
         <h1>Heroes of Might and Magic III: Horn of the Abyss random maps' template list</h1>
         <div id="contents">
             <div id="leftlist">
-                <p class="leftdescr-visible">Click on template name for short description</p>
+                <div class="leftdescrcont">
+                    <p id="leftdescr-0" style="display: block;">Click on template name for short description</p>
+                    <div id="leftdescr-6lm10a" style="display: none;">
+                        <p><img class="templsmallgraph" src="img/graphs/6lm10a.png"><br/>This is one of the most popular XL+U templates. Map layout is heavily branched, and therefore there is no distinct centre. <br>Vast territories are available for players’ exploration, which makes this template quite well-balanced. Both players explore, conduct spell research and usually don’t contact each other, unless one of them does it intentionally. <br>There is some variety in zones: 
+                        </p>
+                        <ul>
+                            <li>4 gold zones (which may contain Relic artifacts) being the most valuable, but hard to access, because all connections that lead there are imperatively roadless.</li>
+                            <li>8 silver zones are second most valuable. There is higher chance for utopias in them, and they usually contains more creature banks (especially Wolf Raiders' Pickets and Dragon Flies' Hives). They are easier to get, because they are always connected to at least one zone.</li>
+                            <li>Pass and ai zones are least valueable, but the first ones have resources mines. They are good gold sources for early game. They also has quite good chance for generating a Grffin Conservatory or Experimental Shop.</li>
+                        </ul>
+                    </div>
+                    <p id="leftdescr-8xm12a" style="display: none;">test</p>
+                </div>    
             </div>
             <div id="centerright">
                 <p class="disclaim">Templates listed here belong to their authors, not owner of this repository.</p>
@@ -40,5 +52,25 @@
                 <p class="templshortdescr">Modifications of Spider <a href="templates/Spider.html" class="templsetlink">go there</a></p>
             </div>
         </div>
+        <script>
+            var templNameElements = document.querySelectorAll('.templname');
+        
+            templNameElements.forEach(function (element) {
+                element.addEventListener('click', function () {
+                    var templateName = element.textContent;
+        
+                    var leftDescrElements = document.querySelectorAll('[id^="leftdescr-"]');
+        
+                    leftDescrElements.forEach(function (descrElement) {
+                        descrElement.style.display = 'none';
+                    });
+        
+                    var leftDescrElement = document.getElementById('leftdescr-' + templateName);
+                    if (leftDescrElement) {
+                        leftDescrElement.style.display = 'block';
+                    }
+                });
+            });
+        </script>
     </body>
 </html>

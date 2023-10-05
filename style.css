@@ -26,8 +26,8 @@ h1 {
     border-bottom: solid;
     border-color: #606153;
     border-bottom-width: 0.7vw;
-    line-height: 10vh;
-    font-size: 4vh;
+    line-height: 8vh;
+    font-size: 3vh;
     margin-top: 0;
 }
 
@@ -37,18 +37,27 @@ h1 {
 }
 
 #leftlist{
-    width: 30vw;
     display: flex;
     flex-direction: column;
     flex: 0.3;
-}
-
-.leftdescr-visible{
-    height: 88vh;
-    line-height: 88vh;
     border-right: solid;
     border-right-color: #606153;
     border-right-width: 0.7vw;
+}
+
+.leftdescrcont{
+    height: auto;
+    margin-left: 0.7vw;
+    font-size: 1vw;
+    font-style: italic;
+    color: rgb(112, 112, 112);
+    font-family: droidsansmono;
+    width: 30vw;
+    padding-right: 0.7vw;
+}
+
+#leftdescr-0{
+    text-align: center;
 }
 
 #centerright{
@@ -63,10 +72,6 @@ h1 {
     flex: 0.3;
     font-style: italic;
     margin-bottom: 0.7vw;
-}
-
-.filler {
-    flex: 0.6;
 }
 
 h2 {
@@ -119,12 +124,7 @@ a:visited{
     font-size: 100%;
     margin-bottom: 0.5vw;
     font-family: droidsansmono;
-}
-
-.ul{
-    font-size: 150%;
-    font-family: droidsansmono;
-}
+}   
 
 .templdescr-visible{
     width: 90vw;
@@ -154,9 +154,25 @@ a:visited{
     margin-right: auto;
 }
 
+.templsmallgraph{
+    height: 30vh;
+    width: 30vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .templgraphsquare{
     height: 70vh;
     width: 75vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.templsmallgraphsquare{
+    height: 35vh;
+    width: 40vh;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -168,6 +184,6 @@ a:visited{
 }
 
 .icon {
-    height: 1.5vw;
-    width: auto;
+    height: 2vh;
+    width: 2vh;
 }
