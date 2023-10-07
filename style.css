@@ -13,7 +13,7 @@ body {
     border-color: #a2a392;
     border-width: 1vw;
     border-top-width: 0em;
-    height: auto;
+    max-height: unset;
     padding: 0;
     margin: 0;
 }
@@ -147,32 +147,32 @@ a:visited{
 }
 
 .templgraph{
-    height: 75vh;
-    width: 75vw;
+    height: auto;
+    max-width: 70vw;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 .templsmallgraph{
-    height: 30vh;
-    width: 30vw;
+    height: auto;
+    max-width: 30vw;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 .templgraphsquare{
-    height: 70vh;
-    width: 75vh;
+    height: auto;
+    max-width: 75vh;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 .templsmallgraphsquare{
-    height: 35vh;
-    width: 40vh;
+    height: auto;
+    max-width: 40vh;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -184,6 +184,6 @@ a:visited{
 }
 
 .icon {
-    height: 2vh;
-    width: 2vh;
+    height: auto;
+    max-width: 2vw;
 }
