@@ -7,6 +7,10 @@
     src: url(font/DroidSansMono.ttf);
 }
 
+a:visited{
+    color: blue;    
+}
+
 body {
     background-color: #f8f4e3;
     border: solid;
@@ -45,14 +49,22 @@ h1 {
     border-right-width: 0.7vw;
 }
 
+#leftlisttemplate{
+    display: flex;
+    flex-direction: column;
+    flex: 0.4;
+    border-right: solid;
+    border-right-color: #606153;
+    border-right-width: 0.7vw;
+}
+
 .leftdescrcont{
-    height: auto;
+    height: 100%;
     margin-left: 0.7vw;
     font-size: 1vw;
     font-style: italic;
     color: rgb(112, 112, 112);
     font-family: droidsansmono;
-    width: 30vw;
     padding-right: 0.7vw;
 }
 
@@ -60,18 +72,75 @@ h1 {
     text-align: center;
 }
 
-#centerright{
+#center{
     display: flex;
     flex-direction: column;
-    flex: 0.7;
-    width: 60vw;
+    flex: 0.45;
 }
-.disclaim {
+
+#centertemplate{
+    display: flex;
+    flex-direction: column;
+    flex: 0.6;
+    height: 100%;
+}
+
+#right{
+    display: flex;
+    flex-direction: column;
+    flex: 0.25;
+    border-left: solid;
+    border-left-color: #606153;
+    border-left-width: 0.7vw;
+}
+
+.bigtexttoc{
+    font-weight: bold;
+    font-size: 150%;
+    flex: 0.5;
+    margin-left: 1.5vw;
+    margin-bottom: 0.5vw;
+    font-family: droidsansmono;
+}
+
+.bigtexttemplmaindescr{
+    font-weight: bold;
+    font-size: 150%;
+    flex: 0.5;
     text-align: center;
+    margin-bottom: 0.5vw;
+    font-family: droidsansmono;
+    color: rgb(112, 112, 112);
+}
+
+.disclaim {
     color: rgb(112, 112, 112);
     flex: 0.3;
     font-style: italic;
+    margin-bottom: 1.7vw;
+    font-family: droidsansmono;
+    font-size: 75%;
+    text-align: center;
+}
+
+.smalltexttoc{
+    color: rgb(112, 112, 112);
+    flex: 9.5;
+    font-style: italic;
     margin-bottom: 0.7vw;
+    margin-left: 1.5vw;
+    font-family: droidsansmono;
+    font-size: 90%;
+}
+
+.smalltexttoc a{
+    color: rgb(112, 112, 112);
+    text-decoration: none;
+}
+
+.smalltexttoc a:visited{
+    color: rgb(112, 112, 112);
+    text-decoration: none;
 }
 
 h2 {
@@ -102,10 +171,6 @@ p {
     margin-left: 2.5vw;
     margin-bottom: 0.5vw;
     font-family: droidsansmono;
-}
-
-a:visited{
-    color: blue;    
 }
 
 .templdescr{
@@ -144,6 +209,8 @@ a:visited{
     cursor: pointer;
     margin-bottom: 0.5vw;
     margin-left: 2.5vw;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .templgraph{
@@ -185,5 +252,5 @@ a:visited{
 
 .icon {
     height: auto;
-    max-width: 2vw;
+    max-width: 1vw;
 }
