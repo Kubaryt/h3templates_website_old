@@ -7,14 +7,23 @@
     src: url(font/DroidSansMono.ttf);
 }
 
+p {
+    margin: 0;
+    color: #afbac5;
+}
+
+a{
+    color: hsl(200, 100%, 50%);
+}
+
 a:visited{
-    color: blue;    
+    color: hsl(200, 100%, 50%);    
 }
 
 body {
-    background-color: #f8f4e3;
+    background-color: #0d1017;
     border: solid;
-    border-color: #a2a392;
+    border-color: #484f58;
     border-width: 1vw;
     border-top-width: 0em;
     max-height: unset;
@@ -24,11 +33,11 @@ body {
 
 h1 {
     text-align: center;
-    color: darkblue;
+    color: #e3b341;
     flex: 1;
     font-family: metamorphous;
     border-bottom: solid;
-    border-color: #606153;
+    border-color: #6e7681;
     border-bottom-width: 0.7vw;
     line-height: 8vh;
     font-size: 3vh;
@@ -40,13 +49,14 @@ h1 {
     flex-direction: row;
 }
 
-#leftlist{
+#rightlist{
     display: flex;
     flex-direction: column;
     flex: 0.3;
-    border-right: solid;
-    border-right-color: #606153;
-    border-right-width: 0.7vw;
+    border-left: solid;
+    border-left-color: #6e7681;
+    border-left-width: 0.7vw;
+    width: 100%;
 }
 
 #leftlisttemplate{
@@ -54,21 +64,22 @@ h1 {
     flex-direction: column;
     flex: 0.4;
     border-right: solid;
-    border-right-color: #606153;
+    border-right-color: #6e7681;
     border-right-width: 0.7vw;
 }
 
-.leftdescrcont{
+
+.rightdescrcont{
     height: 100%;
+    margin-right: 0.7vw;
     margin-left: 0.7vw;
     font-size: 1vw;
     font-style: italic;
-    color: rgb(112, 112, 112);
+    color: #8b939e  !important;
     font-family: droidsansmono;
-    padding-right: 0.7vw;
 }
 
-#leftdescr-0{
+#rightdescr-0{
     text-align: center;
 }
 
@@ -86,13 +97,14 @@ h1 {
     height: 100%;
 }
 
-#right{
+#left{
     display: flex;
     flex-direction: column;
     flex: 0.25;
-    border-left: solid;
-    border-left-color: #606153;
-    border-left-width: 0.7vw;
+    border-right: solid;
+    border-right-color: #6e7681;
+    border-right-width: 0.7vw;
+    width: 100%;
 }
 
 .bigtexttoc{
@@ -102,6 +114,7 @@ h1 {
     margin-left: 1.5vw;
     margin-bottom: 0.5vw;
     font-family: droidsansmono;
+    color: #afbac5;
 }
 
 .bigtexttemplmaindescr{
@@ -111,11 +124,11 @@ h1 {
     text-align: center;
     margin-bottom: 0.5vw;
     font-family: droidsansmono;
-    color: rgb(112, 112, 112);
+    color: #8b939e;
 }
 
 .disclaim {
-    color: rgb(112, 112, 112);
+    color: #8b939e;
     flex: 0.3;
     font-style: italic;
     margin-bottom: 1.7vw;
@@ -125,7 +138,7 @@ h1 {
 }
 
 .smalltexttoc{
-    color: rgb(112, 112, 112);
+    color: #8b939e !important;
     flex: 9.5;
     font-style: italic;
     margin-bottom: 0.7vw;
@@ -134,13 +147,22 @@ h1 {
     font-size: 90%;
 }
 
+.leftdescrcont{
+    height: 100%;
+    margin-left: 0.7vw;
+    font-size: 80%;
+    font-style: italic;
+    color: #8b939e  !important;
+    font-family: droidsansmono;
+}
+
 .smalltexttoc a{
-    color: rgb(112, 112, 112);
+    color: #8b939e;
     text-decoration: none;
 }
 
 .smalltexttoc a:visited{
-    color: rgb(112, 112, 112);
+    color: #8b939e;
     text-decoration: none;
 }
 
@@ -151,10 +173,7 @@ h2 {
     margin-left: 0.5vw;
     margin-bottom: 1.3vw;
     font-family: metamorphous;
-}
-
-p {
-    margin: 0;
+    color: #afbac5;
 }
 
 .templname {
@@ -172,6 +191,7 @@ p {
     margin-left: 2.5vw;
     margin-bottom: 0.5vw;
     font-family: droidsansmono;
+    color: #afbac5;
 }
 
 .templdescr{
@@ -212,6 +232,7 @@ p {
     margin-left: 2.5vw;
     font-weight: bold;
     text-decoration: underline;
+    color: #afbac5;
 }
 
 .templgraph{
@@ -254,4 +275,10 @@ p {
 .icon {
     height: auto;
     max-width: 1vw;
+}
+
+.fillerleft {
+    width: 30vw;
+    height: 0.0001vh;
+    opacity: 0%;
 }
