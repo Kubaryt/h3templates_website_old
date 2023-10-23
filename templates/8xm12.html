@@ -11,11 +11,22 @@
         <div class="retturnbutton">
             <a href="../index.html">&lt;&lt;<img class="icon" src="../img/home_icon.png">home</a>
         </div>
-
-        <h1>Heroes of Might and Magic III: Horn of the Abyss 8xm12a modifications list</h1>
-
-        <p class="disclaim">Templates listed here belong to their authors, not owner of this repository.</p>
         
+        <h1>Heroes of Might and Magic III: Horn of the Abyss 8xm12a modifications list</h1>
+        <!--TODO:
+        - ADD LEFT PANEL WITH DESCRIPTION AND DIVIDE DOCUMENT USING DIVS LIKE IN 6lm10.html-->
+        <p class="disclaim">Templates listed here belong to their authors, not owner of this repository.</p>
+        <!--ELEMENTS ARE CREATED WITH FOLLOWING TEMPLATE:
+        <p class="templname">TEMPLATE VERSION NAME</p>
+        <p class=templshortdescr">Version author: VERSION AUTHOR NICKNAME
+            <br> TEMPLATE SHORT DESCRIPTION SAYING TIME/TOURNAMENT OF CREATION, PURPOSE AND CHARACTERISTIC CHANGES
+            <br> <a target="_blank" href="LINK TO DOWNLOAD">Link to download</a>
+            <br> <div class="templdescrcont" onclick="toggleVisiblity(this)">
+                Click for full description <br/>
+                <iframe class="templsdescr" src="TEMPLATE VERSION NAME.html"></iframe>
+            </div>
+        </p>
+        -->
         <p class="templname">8xm12TP</p>        
         <p class="templshortdescr">Version author: Valerin Bizonov
             <br> Template created for XL+yoU tournament. It purpose was to standarize 8xm12a to TP standard.
@@ -25,7 +36,7 @@
                 <iframe class="templdescr" src="8xm12TP.html"></iframe>
             </div>
         </p>
-<!-- Yes, I know I could write external JS script instead of adding it to every subpage, but I always copy whole subpage, so there is no diffrence -->
+<!--SCRIPT THAT SHOW AND HIDES FULL TEMPLATE DESCRIPTIONS (IFRAMES)-->
       <script>
             function toggleVisibility(container) {
             var templdescr = container.querySelector(".templdescr");
