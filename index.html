@@ -12,11 +12,34 @@
             <a href="https://kapitol.rip/heroes-3-templates/">&lt;&lt;<img class="icon" src="img/favicon.ico    ">go back to association website</a>
         </div>
         <h1>Heroes of Might and Magic III: Horn of the Abyss random maps' template list</h1>
+	<!--MAIN PAGE CONTENT-->
         <div id="contents">
+	    <!--LEFT PANEL WITH TABLE OF CONTENTS WITH LINKS TO PART'S OF PAGES DEDICATED FOR CLICKED TEMPLATE-->
             <div id="left">
                 <p class="bigtexttoc">Table of contents</p>
                 <div class="smalltexttoc">
                     <ul>
+			<!--ELEMENTS CREATED WITH FOLLOWING TEMPLATE:
+			<li>
+			    <a href="#SECTIONAME">SECTION'S HEADER NAME</a>
+			    <ul>
+			    	FIRST VARIANT
+				<li><a href="#TEMPLATENAMEtemplate">TEMPLATENAME</a></li>
+			    	SECOND VARIANT
+			    	<li>
+			    	    <a href="#GROUPNAME">GROUP'S HEADER NAME</a>
+			    	    <ul>
+					<li><a href="#TEMPLATENAMEtemplate">TEMPLATENAME</a></li>
+		    		    </ul>
+		    		</li>
+			    </ul>
+
+			    NOTES:
+			    ELEMENTS ARE ORDERED BY (STARTING WITH THE FIRST OPTION):
+
+			    - SECTION,
+			    - GROUP,
+			    - ALPHABETICAL ORDER-->
                         <li>
                             <a href="#newversionsoftemplates">Alternative versions of default HotA templates</a>
                             <ul>
@@ -26,18 +49,37 @@
                                 <li><a href="#h3dm1template">h3dm1</a></li>
                                 <li><a href="#mt_Andromedatemplate">mt_Andromeda</a></li>
                                 <li><a href="#mt_Firewalktemplate">mt_Firewalk</a></li>
-                                <li><a href="#Nostalgia">Nostalgia</a></li>
-                                <li><a href="#Spider">Spider</a></li>
+                                <li><a href="#Nostalgiatemplate">Nostalgia</a></li>
+                                <li><a href="#Spidertemplate">Spider</a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
             </div>
+	    <!--CENTER PANEL WITH LINKS TO TEMPLATES-->
             <div id="center">
                 <p class="disclaim">Templates listed here belong to their authors, not owner of this repository.</p>
+		<!--ELEMENTS CREATED WITH FOLLOWING TEMPLATE:
+		<h2 id="SECTIONNICKNAME">SECTIONS'S HEADER NAME</h2>
 
+		OPTIONALLY
+		<h3 id="GROUPNAME" class="templname">GROUP'S HEADER NAME</h3>
+		
+		<p class="templname" id="TEMPLATENAMEtemplate">TEMPLATENAME</p>
+		<p class="templshordescr">SECTIONVARIANT TEMPLNAME <a href="templates/TEMPLATENAME.html" class=templsetlink">go there</a></p>
+
+		SECTION VARIANTS, IF YOU CREATE SECTION ADD ITS VARIANT HERE:
+
+		- newversionsoftemplate - Modifications
+		NOTES:
+	        ELEMENTS ARE ORDERED BY (STARTING WITH THE FIRST OPTION):
+
+	    	- SECTION,
+	    	- GROUP,
+	    	- ALPHABETICAL ORDER-->
+		
                 <h2 id="newversionsoftemplates">Alternative versions of default HotA templates</h2>
-
+		
                 <p class="templname" id="6lm10atemplate">6lm10a</p>
                 <p class="templshortdescr">Modifications of 6lm10a <a href="templates/6lm10.html" class="templsetlink">go there</a></p>
 
@@ -56,14 +98,32 @@
                 <p class="templname" id="mt_Firewalktemplate">mt_Firewalk</p>
                 <p class="templshortdescr">Modifications of mt_Firewalk <a href="templates/mt_fw.html" class="templsetlink">go there</a></p>
 
-                <p class="templname" id="Nostalgia">Nostalgia</p>
+                <p class="templname" id="Nostalgiatemplate">Nostalgia</p>
                 <p class="templshortdescr">Modifications of Nostalgia <a href="templates/Nostalgia.html" class="templsetlink">go there</a></p>
 
-                <p class="templname" id="Spider">Spider</p>
+                <p class="templname" id="Spidertemplate">Spider</p>
                 <p class="templshortdescr">Modifications of Spider <a href="templates/Spider.html" class="templsetlink">go there</a></p>
             </div>
+	    <!--RIGHT PANEL WITH SHORT TEMPLATE DESCRIPTIONS SHOWED WHEN CLICKED ON TEMPLATE NAME-->
             <div id="rightlist">
                 <div class="rightdescrcont">
+		    <!--ELEMENTS CREATED WITH FOLLOWING TEMPLATE:
+		    <div id=rightdescr-TEMPLATENAME" style="display: none;">
+			<p><img class=templsmallgraph" src="img/graphs/MAIN TEMPLATE VERSION.png"><br/>MAIN TEMPLATE VERSION SHORT DESCIRPTION<br>Zones in template:</p>
+			<ul>
+			    <li>ZONES DESCRIPTION WITH NUMBER OF ZONES, ITS COLOR AND ADDITIONAL INFO IF NEEDED</li>
+			</ul>
+		    </div>
+			
+		    NOTES:
+	            ELEMENTS ARE ORDERED BY (STARTING WITH THE FIRST OPTION):
+
+	    	    - SECTION,
+	    	    - GROUP,
+	    	    - ALPHABETICAL ORDER
+			
+		    IF TEMPLATE GRAPH IS A SQUARE, NOT A RECTANLGE, YOU USE templsmallgraphsquare CLASS INSTEAD OF templssmallgraph CLASS
+		    -->
                     <p id="rightdescr-0" style="display: block;">Click on template name for short description</p>
                     <div id="rightdescr-6lm10a" style="display: none;">
                         <p><img class="templsmallgraph" src="img/graphs/6lm10e.png"><br/>This is one of the most popular XL+U templates. Map layout is heavily branched, and therefore there is no distinct centre. <br>Vast territories are available for players’ exploration, which makes this template quite well-balanced. Both players explore, conduct spell research and usually don’t contact each other, unless one of them does it intentionally. <br>There is some variety in zones: </p>
@@ -126,6 +186,7 @@
                 </div>  
             </div>
         </div>
+	<!--SCRIPT THAT MAKES RIGHT PANEL CONTENT CHANGE WHEN CLICKED ON TEMPLATE NAMES-->
         <script>
             var templNameElements = document.querySelectorAll('.templname');
         
